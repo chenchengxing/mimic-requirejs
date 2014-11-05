@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script src="node_modules/q/q.js"></script>
+  <script src="src/require.js"></script>
+  <script>
+    var a = {
+      fn: function (a) {
+        console.log('fn', a)
+        expect(a).toBe(2);
+        return a;
+      }
+    };
+    r.require(['a'], a.fn);
+  </script>
+</body>
+</html>
