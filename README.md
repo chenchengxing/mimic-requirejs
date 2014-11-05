@@ -1,0 +1,4 @@
+mimic-requirejs
+===============
+
+try requirejs
